@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1#title= title
+
+  .container 
+    for message in messages
+      .message 
+        h3= message.user 
+        p= message.text 
+        p= message.added
