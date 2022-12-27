@@ -9,3 +9,9 @@ block content
         h3= message.user 
         p= message.text 
         p= message.added
+    button.button(onClick="handleClick()") New Message
+
+    script.
+      const handleClick = (event) => {
+        location.href = "/new"
+      } 
